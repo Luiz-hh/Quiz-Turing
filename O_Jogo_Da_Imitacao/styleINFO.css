@@ -1,0 +1,65 @@
+/*
+MIT License
+Copyright (c) [2025] [Luiz-hh]
+Permissão para usar, copiar, modificar e distribuir este software para qualquer
+propósito com ou sem taxa é concedida, desde que o aviso acima seja incluído
+em todas as cópias ou partes substanciais do software.
+O software é fornecido "como está", sem qualquer garantia de qualquer tipo.
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Cabin+Sketch:wght@400;700&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.principal {
+  background-color: #f4f0ea;
+  color: #331f19;
+  height: 30rem;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  margin: 13.4rem;
+
+  border-radius: 2rem;
+  border: 2px solid #331f19;
+  background-color: #ccd595;
+
+  p {
+    margin-left: 9rem;
+  }
+}
+
+a {
+  border-radius: 2rem;
+  border: 2px solid #331f19;
+  background-color: #331f19;
+  text-decoration: none;
+  color: #f4f0ea;
+  padding: 4.5px;
+  max-width: max-content;
+  margin-left: 78rem;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+.footer {
+  display: block;
+  background-color: #331f19;
+  padding: 2rem;
+  padding-left: 10rem;
+  padding-right: 10rem;
+  text-align: center;
+}
+
+.paragrafo-footer {
+  color: #f4f0ea;
+}

@@ -1,0 +1,216 @@
+/*
+MIT License
+Copyright (c) [2025] [Luiz-hh]
+Permissão para usar, copiar, modificar e distribuir este software para qualquer
+propósito com ou sem taxa é concedida, desde que o aviso acima seja incluído
+em todas as cópias ou partes substanciais do software.
+O software é fornecido "como está", sem qualquer garantia de qualquer tipo.
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Condensed:wght@400;500;600;700&family=Cabin+Sketch:wght@400;700&family=Cabin:ital,wght@0,400..700;1,400..700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: #f4f0ea;
+  color: #331f19;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+}
+
+.container {
+  background-color: #ccd595;
+  width: 90%;
+  max-width: 800px;
+
+  border: 2px solid #331f19;
+  border-radius: 6px;
+  padding: 16px;
+  box-shadow: 0 0 2px 2px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.questions-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.question {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.answers-container div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 8px 0;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+/* Estilo para os labels das respostas */
+label {
+  font-size: 16px;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+label:hover {
+  filter: brightness(0.9);
+}
+
+.answer:disabled {
+  cursor: not-allowed;
+}
+
+.next-question {
+  margin-top: 32px;
+}
+
+.button {
+  background-color: #331f19;
+  color: #f4f0ea;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 6px;
+  height: 48px;
+  padding: 0 32px;
+
+  transition: filter 0.1s;
+}
+
+.button:not(:disabled):hover {
+  filter: brightness(0.8);
+}
+
+/* Finish game */
+.final-message {
+  font-size: 20px;
+  text-align: center;
+}
+
+.final-message span {
+  display: block;
+  margin-top: 8px;
+}
+
+/* General styles */
+.hide {
+  display: none;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: space-evenly; /* Coloca os botões um ao lado do outro com espaço entre eles */
+  gap: 16px; /* Espaço entre os botões */
+  width: 33%;
+  margin-top: 32px;
+}
+
+.prev-question,
+.next-question {
+  background-color: #331f19;
+  color: #f4f0ea;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 6px;
+  height: 48px;
+  padding: 0 32px;
+  transition: filter 0.1s;
+}
+.prev-question {
+  margin-top: 32px;
+  background-color: #331f19;
+  color: #f4f0ea;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 6px;
+  height: 48px;
+  padding: 0 32px;
+
+  transition: filter 0.1s;
+}
+
+.prev-question:hover,
+.next-question:hover {
+  filter: brightness(0.8);
+}
+
+.startButton {
+  margin-top: 30px;
+}
+
+.titleQuiz {
+  text-align: center;
+  padding: 15px;
+  font-size: 30px;
+}
+
+.apresentação {
+  font-size: 16px;
+  text-align: center;
+  padding: 5px;
+}
+
+.finish-quiz {
+  background-color: #331f19;
+  color: #f4f0ea;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 6px;
+  height: 48px;
+  padding: 0 32px;
+  margin-top: 32px;
+  transition: filter 0.1s;
+}
+
+.finish-quiz:hover {
+  filter: brightness(0.8);
+}
+
+.footer {
+  display: block;
+  background-color: #331f19;
+  padding: 2rem;
+  padding-left: 48rem;
+  padding-right: 48rem;
+  text-align: center;
+  position: fixed;
+  margin-top: 56rem;
+}
+
+.paragrafo-footer {
+  color: #f4f0ea;
+}
+
+footer a {
+  text-decoration: none;
+  color: #ccd595;
+}
